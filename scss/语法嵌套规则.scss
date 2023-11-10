@@ -1,0 +1,32 @@
+$color: #fff;
+// 1.语法嵌套写法
+.father {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .son {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+}
+// 2.父类选择器
+.father {
+    &:active {
+        background-color: #fff;
+    }
+}
+// 3.属性嵌套
+.son {
+    color: $color;
+    text-align: center;
+    // 实现属性嵌套必须在属性前面添加一个冒号并且加一个空格
+    font: {
+        size: 12px;
+        weight: 600;
+    }
+}
