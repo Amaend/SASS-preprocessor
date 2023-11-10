@@ -17,7 +17,7 @@ $color: #fff;
 // 2.父类选择器
 .father {
     &:active {
-        background-color: #fff;
+        background-color: $color;
     }
 }
 // 3.属性嵌套
