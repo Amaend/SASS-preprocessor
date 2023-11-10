@@ -1,0 +1,18 @@
+.alter, .alter-warning, .alter-info {
+  width: 200px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.important, .alter-warning, .alter-info {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.alter-info {
+  background-color: pink;
+}
+
+.alter-warning {
+  background-color: yellow;
+}
