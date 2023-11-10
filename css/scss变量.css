@@ -1,0 +1,8 @@
+.father {
+  background-color: #ff6700;
+  font-size: 14px;
+}
+.father .son {
+  border: 1px solid #000;
+  font-size: 12px;
+}
