@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*
+@if()函数允许您根据条件进行分支，并仅返回两种可能结果中的一种。
+语法方式同js的 if....  else if...  else
+*/
+.container {
+  color: red;
+}
+
+/*
+@for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。
+这个指令包含两种格式：@for $var from through ，或者 @for $var from to
+区别在于 through 与 to 的含义：
+当使用 through 时，条件范围包含与的值【例：1-5，包含 5】。
+而使用 to  时条件范围只包含的值不包含 的值【例：1-5，不包含 5】。
+另外，$var 可以是任何变量，比如 $i； 但是必须是整数值。
+*/
+.item-1 {
+  background-color: #fff;
+}
+
+.item-2 {
+  background-color: #fff;
+}
+
+.item-3 {
+  background-color: #fff;
+}
+
+.item-4 {
+  background-color: #fff;
+}
+
+.item-5 {
+  background-color: #fff;
+}
+
+.item-1 {
+  background-color: #fff;
+}
+
+.item-2 {
+  background-color: #fff;
+}
+
+.item-3 {
+  background-color: #fff;
+}
+
+.item-4 {
+  background-color: #fff;
+}
+
+.item-1 {
+  background-color: red;
+}
+
+.item-2 {
+  background-color: pink;
+}
+
+.item-3 {
+  background-color: blue;
+}
+
+.item-4 {
+  background-color: green;
+}
+
+.item-5 {
+  background-color: yellow;
+}
+
+/*
+@while 指令重复输出格式直到表达式返回结果为 false。这样实现比 @for 更复杂的循环。
+*/
+.item-1 {
+  width: 100%;
+}
+
+.item-2 {
+  width: 50%;
+}
+
+.item-3 {
+  width: 33.3333333333%;
+}
+
+.item-4 {
+  width: 25%;
+}

@@ -1,0 +1,20 @@
+/*
+函数的定义与使用
+函数的作用：把一些比较复杂或经常用些的内容进行抽离（封装），以便重复使用
+函数的定义
+提示：函数名function-name 与function_name 是相同的
+@function function-name($param1, $param2, ...){
+    ...
+    @return $value;
+}
+@return
+它只允许在 @函数体 中使用，并且每个 @function 必须以@return结束。当遇到 @return时，它会立即结束函数并返回其结果。
+*/
+@function randomColor() {
+    @return rgb(random(255), random(255), random(255));
+}
+@for $i from 1 through 5 {
+    .item-#{$i} {
+        background-color: randomColor();
+    }
+}

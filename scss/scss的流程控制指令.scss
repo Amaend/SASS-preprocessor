@@ -1,0 +1,52 @@
+//  SCSS 流程控制指令@if、@for、@each、@while
+/*
+@if()函数允许您根据条件进行分支，并仅返回两种可能结果中的一种。
+语法方式同js的 if....  else if...  else
+*/
+$theme: red;
+.container {
+    @if $theme == red {
+        color: red;
+    } @else if $theme == blue {
+        color: blue;
+    } @else {
+        color: green;
+    }
+}
+/*
+@for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。
+这个指令包含两种格式：@for $var from through ，或者 @for $var from to
+区别在于 through 与 to 的含义：
+当使用 through 时，条件范围包含与的值【例：1-5，包含 5】。
+而使用 to  时条件范围只包含的值不包含 的值【例：1-5，不包含 5】。
+另外，$var 可以是任何变量，比如 $i； 但是必须是整数值。
+*/
+@for $i from 1 through 5 {
+    .item-#{$i} {
+        background-color: #fff;
+    }
+}
+@for $i from 1 to 5 {
+    .item-#{$i} {
+        background-color: #fff;
+    }
+}
+// @each 指令的格式是 $var in <list> , $var 可以是任何变量名，比如 $length 或者 $name，而 <list> 是一连串的值，也就是值列表。
+$color-list: red, pink, blue, green, yellow;
+@each $color in $color-list {
+    $index: index($color-list, $color);
+    .item-#{$index} {
+        background-color: #{$color};
+    }
+}
+
+/*
+@while 指令重复输出格式直到表达式返回结果为 false。这样实现比 @for 更复杂的循环。
+*/
+$column: 1;
+@while $column<5 {
+    .item-#{$column} {
+        width: 100% / $column;
+    }
+    $column: $column + 1;
+}

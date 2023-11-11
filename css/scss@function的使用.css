@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+函数的定义与使用
+函数的作用：把一些比较复杂或经常用些的内容进行抽离（封装），以便重复使用
+函数的定义
+提示：函数名function-name 与function_name 是相同的
+@function function-name($param1, $param2, ...){
+    ...
+    @return $value;
+}
+@return
+它只允许在 @函数体 中使用，并且每个 @function 必须以@return结束。当遇到 @return时，它会立即结束函数并返回其结果。
+*/
+.item-1 {
+  background-color: rgb(203, 165, 181);
+}
+
+.item-2 {
+  background-color: rgb(155, 84, 148);
+}
+
+.item-3 {
+  background-color: rgb(15, 39, 32);
+}
+
+.item-4 {
+  background-color: rgb(50, 105, 255);
+}
+
+.item-5 {
+  background-color: rgb(160, 238, 243);
+}
