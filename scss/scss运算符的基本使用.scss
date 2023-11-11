@@ -17,11 +17,20 @@
 //     }
 // }
 // 逻辑运算符（and，or，not）
-$width: 200;
-$height: 200;
+// $width: 200;
+// $height: 200;
+// .container {
+//     @if $width > 100 and $height > 100 {
+//         width: $width + "px";
+//         height: $height + "px";
+//     }
+// }
+// scss插值语句#{}
+$font-size: 12px;
+$item: item;
 .container {
-    @if $width > 100 and $height > 100 {
-        width: $width + "px";
-        height: $height + "px";
-    }
+    font-size: $font-size;
+}
+.#{$item} {
+    font-size: $font-size;
 }

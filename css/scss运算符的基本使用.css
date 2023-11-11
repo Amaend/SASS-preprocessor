@@ -1,4 +1,7 @@
 .container {
-  width: "200px";
-  height: "200px";
+  font-size: 12px;
+}
+
+.item {
+  font-size: 12px;
 }
