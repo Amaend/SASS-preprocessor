@@ -1,0 +1,70 @@
+/*
+color(颜色函数)
+SCSS 包含很多操作颜色的函数。例如：lighten() 与 darken()函数可用于调亮或调暗颜色
+opacify()函数使颜色透明度减少，transparentize()函数使颜色透明度增加，mix()函数可用来混合两种颜色。
+*/
+
+.container {
+    background-color: #ff6700;
+    // 使用lighten()函数将颜色调亮
+    background-color: lighten(#ff6700, 10%);
+    // 使用darken()函数将颜色调暗
+    background-color: darken(#ff6700, 10%);
+    // 使用saturate()函数将颜色调亮
+    background-color: saturate(#ff6700, 10%);
+    // 使用desaturate()函数将颜色调暗
+    background-color: desaturate(#ff6700, 10%);
+    // 使用opacify()函数将颜色透明度减少
+    background-color: opacify(#ff6700, 0.5);
+    // 使用transparentize()函数将颜色透明度增加
+    background-color: transparentize(#ff6700, 0.5);
+    // 使用mix()函数将两种颜色混合
+    background-color: mix(#ff6700, #fff);
+}
+// string字符串函数
+// SCSS 有许多处理字符串的函数，比如向字符串添加引号的 quote()、获取字符串长度的str-length() 和 将内容插入字符串给定位置的 str-insert()。
+/*
+ math函数
+ 数值函数处理数值计算，例如：percentage()将无单元的数值转换为百分比，round()将数字四舍五入为最接近的整数，
+ min()和max()获取几个数字中的最小值或最大值，random()返回一个随机数。
+*/
+
+/*
+$number: -10;
+.container {
+    z-index: abs($number);
+    // 将无单元的数值转换为百分比
+    width: percentage(0.5);
+    // 将数字四舍五入为最接近的整数
+    width: round(0.5);
+    // 获取几个数字中的最小值或最大值
+    width: min(10px, 20px, 30px);
+    // 返回一个随机数
+    width: random(100);
+}
+*/
+/*
+Map函数
+Map函数操作Map，map-get() 根据键值获取map中的对应值，map-merge() 来将两个map合并成一个新的map，map-values() 映射中的所有值
+*/
+// $map: (
+//     key1: value1,
+//     key2: value2
+// );
+/*
+$font-sizes: (
+    small: 12px,
+    medium: 16px,
+    large: 20px
+);
+.container {
+    // 获取map中的单个值
+    font-size: map-get($font-sizes, "small");
+    // 获取map中的所有值
+    font-size: map-values($font-sizes) + "";
+    // map-has-key() 检查map中是否存在某个键
+    @if map-has-key($font-sizes, "medium") {
+        font-size: map-get($font-sizes, "medium");
+    }
+}
+*/
