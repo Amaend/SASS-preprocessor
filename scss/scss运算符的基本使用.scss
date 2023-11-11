@@ -1,0 +1,27 @@
+// 等于操作符（==，！==）
+// $item: 2;
+// .container {
+//     @if $item == 1 {
+//         background-color: pink;
+//     } @else if $item == 2 {
+//         background-color: red;
+//     }
+// }
+// 关系运算符（>，<，>=，<=）
+// $item: 2;
+// .container {
+//     @if $item > 1 {
+//         background-color: pink;
+//     } @else {
+//         background-color: #fff;
+//     }
+// }
+// 逻辑运算符（and，or，not）
+$width: 200;
+$height: 200;
+.container {
+    @if $width > 100 and $height > 100 {
+        width: $width + "px";
+        height: $height + "px";
+    }
+}
